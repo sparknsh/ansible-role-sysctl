@@ -1,0 +1,8 @@
+---
+
+sysctl__conf:
+  - name: net.ipv4.tcp_fin_timeout
+    value: 10
+  - name: vm.swappiness
+    value: 10
+    state: absent

@@ -1,0 +1,3 @@
+---
+
+sysctl__file: "/etc/sysctl.d/00-ansible.conf"

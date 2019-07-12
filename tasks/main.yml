@@ -1,0 +1,20 @@
+---
+
+- name: sysctl | Set Default sysctl.conf
+  template:
+    src: sysctl.conf.j2
+    dest: /etc/sysctl.conf
+    owner: root
+    group: root
+    mode: 0644
+
+- name: sysctl | Set custom sysctl variables
+  sysctl:
+    name: "{{ item.name }}"
+    value: "{{ item.value }}"
+    reload: true
+    state: "{{ item.state | default('present') }}"
+    sysctl_file: "{{ sysctl__file }}"
+  with_items: "{{ sysctl__conf }}"
+  loop_control:
+    label: "{{ item.name }}"

@@ -1,6 +1,6 @@
 # Ansible Role: sysctl
 
-#### Version: 1.0.0
+#### Version: 1.0.1
 
 [![](https://img.shields.io/badge/role-sparknsh.sysctl-blue.svg)](https://galaxy.ansible.com/sparknsh/sysctl)
 
@@ -9,6 +9,7 @@ Development of this project is managed in a private repository then pushed out t
 ## Role Variables
 
 ```yaml
+sysctl__file_name: ansible
 sysctl__conf: []
 ```
 

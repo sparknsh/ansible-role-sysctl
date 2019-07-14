@@ -1,4 +1,5 @@
 ---
 
 sysctl__file_name: ansible
+sysctl__conf_tpl: sysctl.conf.j2
 sysctl__conf: []

@@ -1,3 +1,4 @@
 ---
 
-sysctl__file: "/etc/sysctl.d/00-{{ sysctl__file_name }}.conf"
+sysctl__file: "/etc/sysctl.d/000-{{ sysctl__file_name }}.conf"
+sysctl__conf_file: /etc/sysctl.conf

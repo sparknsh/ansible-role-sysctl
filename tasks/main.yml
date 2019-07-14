@@ -2,8 +2,8 @@
 
 - name: sysctl | Set Default sysctl.conf
   template:
-    src: sysctl.conf.j2
-    dest: /etc/sysctl.conf
+    src: "{{ sysctl__conf_tpl }}"
+    dest: "{{ sysctl__conf_file }}"
     owner: root
     group: root
     mode: 0644
